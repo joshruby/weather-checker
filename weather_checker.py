@@ -56,9 +56,10 @@ if zip_code:
     # st.write(test_map_df.iloc[1,1])
     # st.map(test_map_df[:1], zoom=11)
 
-    st.write('Current weather in Los Altos [K]: ', weather_k)
+    st.write('Current weather in ' + zip_code + ' [K]: ', weather_k)
 
-    # temp_f = (temp_k - 273.15) * 1.8 + 32
-    # st.write(temp_f)
+    temp_f = (temp_k - 273.15) * 1.8 + 32
+
+    st.write('Current temperature in ' + zip_code + ' [F]: ', float('%.2f' % temp_f))
 
 # st.button('Refresh')
