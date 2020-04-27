@@ -3,12 +3,15 @@ import pandas as pd
 import numpy as np
 import pydeck as pdk
 import requests
+from streamlit import caching
 
 st.subheader('Testing the "requests" library')
 
 zip_code = st.text_input('Zip Code', value='', key=None, type='default')
 
 if zip_code:
+    # caching.clear_cache()
+
     r = requests.get('http://api.openweathermap.org/data/2.5/weather?zip=' + zip_code + ',us&appid=5c3d72cdc2b3e6fc1c06ddc0004a713b')
 
     # st.write(r.json())
