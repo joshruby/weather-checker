@@ -1,0 +1,4 @@
+[mapbox]
+# Configure Streamlit to use a custom Mapbox token for elements like st.deck_gl_chart and st.map. If you don't do this you'll be using Streamlit's own token, which has limitations and is not guaranteed to always work. To get a token for yourself, create an account at https://mapbox.com. It's free! (for moderate usage levels)
+# Default: ""
+token = "pk.eyJ1IjoianJydWJ5IiwiYSI6ImNrOWtrMDU3czF2dTkzZG53Nmw2NDdneTMifQ.zzXEhr0Z1biR2pydOFco8A"
