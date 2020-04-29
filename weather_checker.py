@@ -1,8 +1,3 @@
-# mapbox weather-checker token:
-mapbox_token = 'pk.eyJ1IjoianJydWJ5IiwiYSI6ImNrOWtrMDU3czF2dTkzZG53Nmw2NDdneTMifQ.zzXEhr0Z1biR2pydOFco8A'
-# This token is configured for this script in ./streamlit/config.toml
-# It's being initialized as a var here as well to use with plotly
-
 import streamlit as st
 from streamlit import caching
 import requests
@@ -10,6 +5,9 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 import plotly.express as px
+
+# mapbox weather-checker token for plotly use:
+mapbox_token = 'pk.eyJ1IjoianJydWJ5IiwiYSI6ImNrOWtrMDU3czF2dTkzZG53Nmw2NDdneTMifQ.zzXEhr0Z1biR2pydOFco8A'
 
 st.header('Weather Checker')
 

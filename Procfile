@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run cycling_performance_estimator.py
+web: sh setup.sh && streamlit run weather_checker.py
