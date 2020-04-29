@@ -4,12 +4,10 @@ mapbox_token = 'pk.eyJ1IjoianJydWJ5IiwiYSI6ImNrOWtrMDU3czF2dTkzZG53Nmw2NDdneTMif
 # It's being initialized as a var here as well to use with plotly
 
 import streamlit as st
+from streamlit import caching
+import requests
 import pandas as pd
 import numpy as np
-import pydeck as pdk
-import requests
-from streamlit import caching
-# import altair as alt
 import plotly.graph_objects as go
 import plotly.express as px
 

@@ -9,6 +9,7 @@ verify_ssl = true
 streamlit = "*"
 pandas = "*"
 plotly = "*"
+pipreqs = "*"
 
 [requires]
 python_version = "3.8"
